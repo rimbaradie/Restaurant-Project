@@ -5,23 +5,25 @@ using System.Web.UI;
 
 namespace Final_Project
 {
-    public partial class Home : System.Web.UI.Page
+    public partial class ContactUs : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
         }
 
-        protected void SubscribeButton_Click(object sender, EventArgs e)
+        protected void btnSendMessage_Click(object sender, EventArgs e)
         {
-            
-            string email = EmailTextBox.Text.Trim();
-           
+            // Get the data from the form
+            string name = txtName.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string subject = txtSubject.Text.Trim();
+            string message = txtMessage.Text.Trim();
 
             // Define your connection string (or use the one in Web.config)
-            string connectionString = ConfigurationManager.ConnectionStrings["OrderDBConnection"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["OrderDBConnection"].ConnectionString; 
 
             // Create the SQL query to insert the data into the ContactMessages table
-            string query = "INSERT INTO subscribe (Email) VALUES ( @Email)";
+            string query = "INSERT INTO ContactMessages (Name, Email, Subject, Message) VALUES (@Name, @Email, @Subject, @Message)";
 
             // Using statement for connection and command to ensure proper cleanup
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -29,18 +31,19 @@ namespace Final_Project
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     // Add parameters to prevent SQL injection
-                    
+                    command.Parameters.AddWithValue("@Name", name);
                     command.Parameters.AddWithValue("@Email", email);
-                    
+                    command.Parameters.AddWithValue("@Subject", subject);
+                    command.Parameters.AddWithValue("@Message", message);
 
                     try
                     {
                         // Open the connection and execute the query
                         connection.Open();
                         command.ExecuteNonQuery();
-
+                        
                         // Provide a success message to the user (you can redirect to another page or show a confirmation)
-                        Response.Write("<script>alert('Subscription successful! Thank you for subscribing.');</script>");
+                        Response.Write("<script>alert('Message submitted successfully!');</script>");
                     }
                     catch (Exception ex)
                     {

@@ -67,10 +67,63 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="BookATable.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="img\Anna.jpg" />
+    <Content Include="img\bite.jpg" />
+    <Content Include="img\burger.jpg" />
+    <Content Include="img\cheeseburger.jpg" />
+    <Content Include="img\chef.jpg" />
+    <Content Include="img\chef2.jpg" />
+    <Content Include="img\classic.jpeg" />
+    <Content Include="img\classicburger.jpg" />
+    <Content Include="img\crispy.jpg" />
+    <Content Include="img\emma.jpg" />
+    <Content Include="img\fb.jpg" />
+    <Content Include="img\food.jpg" />
+    <Content Include="img\fries.jpg" />
+    <Content Include="img\iced.jpg" />
+    <Content Include="img\image2.jpeg" />
+    <Content Include="img\images.jpg" />
+    <Content Include="img\insta.png" />
+    <Content Include="img\int.jpeg" />
+    <Content Include="img\john.jpg" />
+    <Content Include="img\lemonade.jpg" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="img\logoo.jpeg" />
+    <Content Include="img\onionring.jpg" />
+    <Content Include="img\soda.jpg" />
+    <Content Include="img\twitter.jpg" />
+    <Content Include="Location.aspx" />
+    <Content Include="Menu.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="SpecialOffers.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookATable.aspx.cs">
+      <DependentUpon>BookATable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookATable.aspx.designer.cs">
+      <DependentUpon>BookATable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,7 +131,35 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Location.aspx.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Location.aspx.designer.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecialOffers.aspx.cs">
+      <DependentUpon>SpecialOffers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpecialOffers.aspx.designer.cs">
+      <DependentUpon>SpecialOffers.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -89,6 +170,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
