@@ -69,18 +69,27 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="BookATable.aspx" />
+    <Content Include="ClaimOrders.aspx" />
     <Content Include="ContactUs.aspx" />
+    <Content Include="Delivery.aspx" />
+    <Content Include="events.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="Feedback.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="img\Anna.jpg" />
     <Content Include="img\bite.jpg" />
     <Content Include="img\burger.jpg" />
+    <Content Include="img\c.jpg" />
     <Content Include="img\cheeseburger.jpg" />
     <Content Include="img\chef.jpg" />
     <Content Include="img\chef2.jpg" />
     <Content Include="img\classic.jpeg" />
     <Content Include="img\classicburger.jpg" />
     <Content Include="img\crispy.jpg" />
+    <Content Include="img\crispyy.jpg" />
+    <Content Include="img\diningarea.jpg" />
     <Content Include="img\emma.jpg" />
+    <Content Include="img\fahita.jpg" />
     <Content Include="img\fb.jpg" />
     <Content Include="img\food.jpg" />
     <Content Include="img\fries.jpg" />
@@ -94,10 +103,18 @@
     <Content Include="img\logo.jpg" />
     <Content Include="img\logoo.jpeg" />
     <Content Include="img\onionring.jpg" />
+    <Content Include="img\plating.jpg" />
+    <Content Include="img\s.jpg" />
+    <Content Include="img\salad.jpg" />
     <Content Include="img\soda.jpg" />
     <Content Include="img\twitter.jpg" />
+    <Content Include="img\veg.jpg" />
+    <Content Include="img\vege.jpg" />
+    <Content Include="img\wing.jpg" />
+    <Content Include="img\wings.jpg" />
     <Content Include="Location.aspx" />
     <Content Include="Menu.aspx" />
+    <Content Include="nutrition.aspx" />
     <Content Include="Order.aspx" />
     <Content Include="SpecialOffers.aspx" />
     <Content Include="Web.config" />
@@ -117,12 +134,47 @@
     <Compile Include="BookATable.aspx.designer.cs">
       <DependentUpon>BookATable.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClaimOrders.aspx.cs">
+      <DependentUpon>ClaimOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClaimOrders.aspx.designer.cs">
+      <DependentUpon>ClaimOrders.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery.aspx.cs">
+      <DependentUpon>Delivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery.aspx.designer.cs">
+      <DependentUpon>Delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="events.aspx.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="events.aspx.designer.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -144,6 +196,13 @@
     </Compile>
     <Compile Include="Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nutrition.aspx.cs">
+      <DependentUpon>nutrition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nutrition.aspx.designer.cs">
+      <DependentUpon>nutrition.aspx</DependentUpon>
     </Compile>
     <Compile Include="Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>

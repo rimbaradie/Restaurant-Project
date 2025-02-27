@@ -11,7 +11,7 @@ namespace Final_Project
 {
 
 
-    public partial class Home
+    public partial class ClaimOrders
     {
 
         /// <summary>
@@ -24,6 +24,15 @@ namespace Final_Project
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// NameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox NameTextBox;
+
+        /// <summary>
         /// EmailTextBox control.
         /// </summary>
         /// <remarks>
@@ -33,21 +42,21 @@ namespace Final_Project
         protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
 
         /// <summary>
-        /// SubscribeButton control.
+        /// PhoneTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubscribeButton;
+        protected global::System.Web.UI.WebControls.TextBox PhoneTextBox;
 
         /// <summary>
-        /// SuccessMessageLabel control.
+        /// SubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SuccessMessageLabel;
+        protected global::System.Web.UI.WebControls.Button SubmitButton;
     }
 }

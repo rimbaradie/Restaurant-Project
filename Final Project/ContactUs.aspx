@@ -201,6 +201,7 @@
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
+                    <li><a href="FAQ.aspx">FAQ</a></li>
                 </ul>
             </nav>
 
@@ -227,10 +228,7 @@
             </div>
 
             <!-- Google Map Section -->
-            <div class="map-container">
-                <h2>Find Us On The Map</h2>
-                <iframe src="https://www.google.com/maps/embed/v1/place?q=Hamra+Street,+Beirut,+Lebanon&key=YOUR_GOOGLE_MAPS_API_KEY" allowfullscreen></iframe>
-            </div>
+           
 
             <!-- Footer Section -->
             <footer>

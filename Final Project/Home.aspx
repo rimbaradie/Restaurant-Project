@@ -336,6 +336,7 @@
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
+                     <li><a href="FAQ.aspx">FAQ</a></li>
                 </ul>
             </nav>
 
@@ -408,15 +409,13 @@
             </section>
 
             <!-- Newsletter Subscription Section -->
-               <form id="form2" runat="server">
-        <section class="newsletter">
-            <h2>Stay Updated!</h2>
-            <p>Subscribe to our newsletter and be the first to know about our latest promotions and menu items.</p>
-            <asp:TextBox ID="EmailTextBox" runat="server" Placeholder="Enter your email" CssClass="form-input" type="email" required="true"></asp:TextBox>
-            <asp:Button ID="SubscribeButton" runat="server" Text="Subscribe" CssClass="cta-button" OnClick="SubscribeButton_Click" />
-            <asp:Label ID="SuccessMessageLabel" runat="server" CssClass="success-message" Visible="false"></asp:Label>
-        </section>
-    </form>
+            <section class="newsletter">
+                <h2>Stay Updated!</h2>
+                <p>Subscribe to our newsletter and be the first to know about our latest promotions and menu items.</p>
+                <asp:TextBox ID="EmailTextBox" runat="server" Placeholder="Enter your email" CssClass="form-input" type="email" required="true"></asp:TextBox>
+                <asp:Button ID="SubscribeButton" runat="server" Text="Subscribe" CssClass="cta-button" OnClick="SubscribeButton_Click" />
+                <asp:Label ID="SuccessMessageLabel" runat="server" CssClass="success-message" Visible="false"></asp:Label>
+            </section>
 
             <!-- Social Media Links Section -->
             <section class="social-media">
@@ -443,6 +442,3 @@
     </form>
 </body>
 </html>
-
-
-

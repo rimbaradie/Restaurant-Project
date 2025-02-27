@@ -168,6 +168,7 @@
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
+                     <li><a href="FAQ.aspx">FAQ</a></li>
                 </ul>
             </nav>
 

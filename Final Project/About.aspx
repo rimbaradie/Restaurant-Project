@@ -111,22 +111,163 @@
             color: #555;
         }
 
-        /* Team Feature Section */
-        .team-feature {
+        /* Picture Gallery Section */
+        .picture-gallery {
+            padding: 40px;
+            text-align: center;
             background-color: #f4f4f4;
-            padding: 40px 20px;
+        }
+
+        .gallery-item {
+            display: inline-block;
+            margin: 20px;
+            width: 45%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
         }
 
-        .team-feature h2 {
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .gallery-info {
+            margin-top: 10px;
+        }
+
+        .like-button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .like-button:hover {
+            background-color: #d94d2c;
+        }
+
+        .comment-section {
+            margin-top: 20px;
+        }
+
+        .comment-section textarea {
+            width: 80%;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .submit-comment {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .submit-comment:hover {
+            background-color: #d94d2c;
+        }
+
+        .likes-count {
+            margin-left: 10px;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .video-section iframe {
+            border-radius: 10px;
+        }
+
+        /* Social Share Section */
+        .social-share {
+            padding: 40px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Review & Rating Section */
+        .review-rating {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .review-rating h2 {
             font-size: 30px;
             margin-bottom: 20px;
         }
 
-        .team-feature p {
+        .review-rating p {
             font-size: 18px;
-            margin-bottom: 20px;
             color: #555;
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            margin-bottom: 20px;
+        }
+
+        .rating select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .review-text textarea {
+            width: 80%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .submit-review {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .submit-review:hover {
+            background-color: #d94d2c;
+        }
+
+        .review-feedback {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #4CAF50;
         }
 
         /* Footer Section */
@@ -151,7 +292,6 @@
         footer a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
 
@@ -168,6 +308,7 @@
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
+                     <li><a href="FAQ.aspx">FAQ</a></li>
                 </ul>
             </nav>
 
@@ -204,10 +345,91 @@
                 </div>
             </section>
 
-            <!-- Meet Our Team Section -->
-            <section class="team-feature">
-                <h2>Meet Our Team</h2>
-                <p>Our team is the heart and soul of Quick Bite. From the kitchen to the service area, each team member plays a key role in ensuring that every visit is a great experience. We work hard to bring you delicious food and fast service, always with a smile!</p>
+            <!-- Picture Gallery Section -->
+          <section class="picture-gallery">
+    <h2>Our Restaurant in Action</h2>
+    <div class="gallery-item">
+        <img src="img/diningarea.jpg" alt="Dining Area" />
+        <div class="gallery-info">
+            <asp:Button ID="Button1" runat="server" Text="👍 Like" CssClass="like-button" OnClick="LikeButton_Click" CommandArgument="diningarea" />
+            <asp:Label ID="likesCount1" runat="server" CssClass="likes-count">0 Likes</asp:Label>
+            <div class="comment-section">
+                <textarea id="txtCommentdiningarea" runat="server" placeholder="Leave a comment..."></textarea>
+                <asp:Button ID="btnSubmitComment1" runat="server" Text="Submit Comment" CommandArgument="diningarea" OnClick="SubmitComment_Click" />
+            </div>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="img/plating.jpg" alt="Food Plating" />
+        <div class="gallery-info">
+            <asp:Button ID="Button2" runat="server" Text="👍 Like" CssClass="like-button" OnClick="LikeButton_Click" CommandArgument="plating" />
+            <asp:Label ID="likesCount2" runat="server" CssClass="likes-count">0 Likes</asp:Label>
+            <div class="comment-section">
+                <textarea id="txtCommentplating" runat="server" placeholder="Leave a comment..."></textarea>
+                <asp:Button ID="btnSubmitComment2" runat="server" Text="Submit Comment" CommandArgument="plating" OnClick="SubmitComment_Click" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+            <!-- Video Section -->
+   <section class="video-section">
+    <h2>Take a Tour of Quick Bite</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8E34CjzRhwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+
+
+            <!-- Social Share Section -->
+            <section class="social-share">
+                <h2>Share with Your Friends</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com" target="_blank">
+                        <img src="img/fb.jpg" alt="Share on Facebook">
+                    </a>
+                    <a href="https://twitter.com/share?url=http://example.com" target="_blank">
+                        <img src="img/twitter.jpg" alt="Share on Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="img/insta.png" alt="Share on Instagram">
+                    </a>
+                </div>
+            </section>
+
+            <!-- Review & Rating Section -->
+             <section class="review-rating">
+                <h2>Leave Us a Review</h2>
+                <p>We would love to hear your thoughts on your experience at Quick Bite. Please leave us a rating and a comment!</p>
+
+                <!-- Rating System -->
+                <div class="rating">
+                    <label for="rating">Rate Us:</label>
+                    <asp:DropDownList ID="ratingDropdown" runat="server">
+                        <asp:ListItem Value="1">1 Star</asp:ListItem>
+                        <asp:ListItem Value="2">2 Stars</asp:ListItem>
+                        <asp:ListItem Value="3">3 Stars</asp:ListItem>
+                        <asp:ListItem Value="4">4 Stars</asp:ListItem>
+                        <asp:ListItem Value="5">5 Stars</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+
+                <!-- Review Text Area -->
+                <div class="review-text">
+                    <asp:TextBox ID="reviewTextBox" runat="server" TextMode="MultiLine" Rows="4" Width="80%"></asp:TextBox>
+                </div>
+
+                <!-- Submit Button -->
+                <asp:Button ID="submitReviewButton" runat="server" Text="Submit Review" CssClass="submit-review" OnClick="SubmitReview" />
+
+                <div class="review-feedback">
+                    <asp:Label ID="feedbackLabel" runat="server" ForeColor="Green" Visible="false"></asp:Label>
+                </div>
             </section>
 
             <!-- Footer Section -->
@@ -219,4 +441,3 @@
     </form>
 </body>
 </html>
-
