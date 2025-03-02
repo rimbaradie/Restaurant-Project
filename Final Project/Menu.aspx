@@ -46,6 +46,15 @@
             background-color: #ff5733;
             color: white;
         }
+         .main-header {
+     background-color: #333;
+     padding: 20px;
+     text-align: center;
+          }
+
+      .main-header .logo img {
+             width: 150px;
+           }
 
         /* Menu Section */
         .menu {
@@ -165,12 +174,19 @@
                     <li><a href="About.aspx">About Us</a></li>
                     <li><a href="Menu.aspx">Menu</a></li>
                     <li><a href="SpecialOffers.aspx">Special Offers</a></li>
+                     <li><a href="nutrition.aspx">Nourishment</a></li>
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
                      <li><a href="FAQ.aspx">FAQ</a></li>
+                     <li><a href="Delivery.aspx">Delivery</a></li>
                 </ul>
             </nav>
+             <header class="main-header">
+            <div class="logo">
+             <img src="img/logoo.jpeg" alt="Quick Bite Restaurant Logo" />
+           </div>
+           </header>
 
             <!-- Menu Section -->
             <section class="menu">
@@ -178,12 +194,28 @@
 
                 <!-- Burgers Section -->
                 <div class="menu-category">
-                    <h3>Burgers</h3>
+                    <h3>Special Food</h3>
                     <div class="menu-item">
                         <img src="img/classicburger.jpg" alt="Classic Burger" />
                         <p>Classic Burger</p>
                         <span>$8.99</span>
                     </div>
+                     <div class="menu-item">
+                    <img src="img/p.jpeg" alt="Pizza" />
+                     <p>Pizza</p>
+                     <span>$10.00</span>
+                      </div>
+                     <div class="menu-item">
+                      <img src="img/c.jpg" alt="Wings" />
+                      <p>Chicken Wings</p>
+                     <span>$6.00</span>
+                      </div>
+                      <div class="menu-item">
+                      <img src="img/hotdog.jpeg" alt="Hot Dog" />
+                      <p>Hot Dog</p>
+                      <span>$7.00</span>
+                      </div>
+
                     <div class="menu-item">
                         <img src="img/bite.jpg" alt="Big Bite Burger" />
                         <p>The Big Bite Burger</p>
@@ -195,6 +227,15 @@
                         <span>$9.99</span>
                     </div>
                 </div>
+                <div class="menu-category">
+                <h3>Salad</h3>
+                <div class="menu-item">
+                <img src="img/salad.jpg" alt="Salad" />
+                <p>Vegetarian Salad</p>
+                <span>$8.00</span>
+                </div>
+                  </div>
+
 
                 <!-- Sides Section -->
                 <div class="menu-category">

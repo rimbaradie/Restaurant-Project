@@ -5,12 +5,47 @@
 <head runat="server">
     <title>Nutrition & Allergen Information</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
+       
+          body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+
+  /* Navigation Bar */
+  nav {
+      background-color: #333;
+      overflow: hidden;
+      position: sticky;
+      top: 0;
+      width: 100%;
+  }
+
+  nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+  }
+
+  nav ul li {
+      display: inline;
+  }
+
+  nav ul li a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+  }
+
+  nav ul li a:hover {
+      background-color: #ff5733;
+      color: white;
+  }
+
         .header {
             background-color: #f04e23;
             color: white;
@@ -77,6 +112,20 @@
 <body>
 
     <form id="form1" runat="server">
+         <nav>
+     <ul>
+         <li><a href="Home.aspx">Home</a></li>
+         <li><a href="About.aspx">About Us</a></li>
+         <li><a href="Menu.aspx">Menu</a></li>
+         <li><a href="SpecialOffers.aspx">Special Offers</a></li>
+          <li><a href="nutrition.aspx">Nourishment</a></li>
+         <li><a href="ContactUs.aspx">Contact Us</a></li>
+         <li><a href="BookATable.aspx">Book A Table</a></li>
+         <li><a href="Location.aspx">Location</a></li>
+          <li><a href="FAQ.aspx">FAQ</a></li>
+          <li><a href="Delivery.aspx">Delivery</a></li>
+     </ul>
+ </nav>
         <div class="header">
             <h1>Nutrition & Allergen Information</h1>
         </div>
@@ -294,8 +343,9 @@
 
                 <!-- Item 5: Fajita -->
                 <div class="menu-item">
-                    <img src="img/fahita.jpg" alt="Fajita">
-                    <h3>Fajita</h3>
+                    <img src="img/p.jpeg" alt=" Pizza" width="500" height="600">
+
+                    <h3> Pizza</h3>
                     <table>
                         <tr>
                             <th>Calories</th>

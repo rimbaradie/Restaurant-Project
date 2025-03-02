@@ -7,12 +7,12 @@
 
     <!-- Inline CSS for Styling -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #d0eaff, #f9f9f9);  /* Light gradient background */
-            margin: 0;
-            padding: 0;
-        }
+      body {
+           font-family: Arial, sans-serif;
+          background: linear-gradient(to bottom, #f8f1e1, #f3e0c1);  /* Light cream to soft terracotta gradient */
+           margin: 0;
+          padding: 0;
+      }
 
         .claim-form-container {
             width: 80%;
@@ -100,7 +100,7 @@
 <body>
 
     <!-- Back Link -->
-    <a href="SpecialOffers.aspx" class="back-link">Back</a>
+    <a href="SpecialOffers.aspx" class="back-link">Back to Special Offers</a>
 
     <!-- Form for Claim Offer -->
     <form id="form1" runat="server">

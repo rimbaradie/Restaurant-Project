@@ -14,6 +14,15 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+          .main-header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .main-header .logo img {
+      width: 150px;
+  }
 
         /* Navigation Bar */
         nav {
@@ -169,12 +178,20 @@
                     <li><a href="About.aspx">About Us</a></li>
                     <li><a href="Menu.aspx">Menu</a></li>
                     <li><a href="SpecialOffers.aspx">Special Offers</a></li>
+                     <li><a href="nutrition.aspx">Nourishment</a></li>
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
                      <li><a href="FAQ.aspx">FAQ</a></li>
+                      <li><a href="Delivery.aspx">Delivery</a></li>
+
                 </ul>
             </nav>
+              <header class="main-header">
+      <div class="logo">
+          <img src="img/logoo.jpeg" alt="Quick Bite Restaurant Logo" />
+      </div>
+       </header>
 
             <!-- Special Offers Section -->
             <section class="special-offers">
@@ -183,7 +200,7 @@
                 <!-- Offer Card 1 -->
                 <div class="offer-card">
                     <img src="img/burger.jpg" alt="Burger Offer" />
-                    <h3>Buy One, Get One Free</h3>
+                    <h3>Buy Two, Get One Free</h3>
                     <p>Enjoy our classic burger with a friend! Buy one and get the second one free. Limited time offer.</p>
                     <p class="price">$8.99</p>
                     <a href="ClaimOrders.aspx" class="claim-button">Claim Offer</a>
@@ -201,7 +218,7 @@
                 <!-- Offer Card 3 -->
                 <div class="offer-card">
                     <img src="img/soda.jpg" alt="Drink Offer" />
-                    <h3>Buy One Drink, Get One Free</h3>
+                    <h3>Buy Two Drink, Get One Free</h3>
                     <p>Enjoy any of our refreshing drinks and get another one free. Perfect for sharing with friends!</p>
                     <p class="price">$3.49</p>
                      <a href="ClaimOrders.aspx" class="claim-button">Claim Offer</a>

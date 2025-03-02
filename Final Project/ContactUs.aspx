@@ -11,6 +11,15 @@
      margin: 0;
      padding: 0;
      background-color: #f4f4f4;
+ }     
+         .main-header {
+     background-color: #333;
+     padding: 20px;
+     text-align: center;
+          }
+
+ .main-header .logo img {
+     width: 150px;
  }
 
  /* Navigation Bar */
@@ -202,8 +211,14 @@
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
                     <li><a href="FAQ.aspx">FAQ</a></li>
+                    <li><a href="Delivery.aspx">Delivery</a></li>
                 </ul>
             </nav>
+            <header class="main-header">
+            <div class="logo">
+        <img src="img/logoo.jpeg" alt="Quick Bite Restaurant Logo" />
+            </div>
+        </header>
 
             <!-- Contact Section -->
             <div class="contact-container">

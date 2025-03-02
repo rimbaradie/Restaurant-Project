@@ -13,5 +13,11 @@ namespace Final_Project
         {
 
         }
+
+        protected void EmailTextBox_TextChanged(EventArgs e)
+        {
+
+        }
+
     }
 }

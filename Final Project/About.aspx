@@ -111,79 +111,79 @@
             color: #555;
         }
 
-        /* Picture Gallery Section */
-        .picture-gallery {
-            padding: 40px;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
+       .picture-gallery {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
 
-        .gallery-item {
-            display: inline-block;
-            margin: 20px;
-            width: 45%;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
+.gallery-item {
+    display: inline-block;
+    margin: 20px;
+    width: 45%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 
-        .gallery-info {
-            margin-top: 10px;
-        }
+.gallery-info {
+    margin-top: 10px;
+}
 
-        .like-button {
-            background-color: #ff5733;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+.like-button {
+    background-color: #ff5733 !important; /* Added !important to ensure it takes precedence */
+    color: white !important; /* Added !important to ensure it takes precedence */
+    border: none !important; /* Added !important */
+    padding: 10px 15px !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+}
 
-        .like-button:hover {
-            background-color: #d94d2c;
-        }
+.like-button:hover {
+    background-color: #d94d2c !important;
+}
 
-        .comment-section {
-            margin-top: 20px;
-        }
+.comment-section {
+    margin-top: 20px;
+}
 
-        .comment-section textarea {
-            width: 80%;
-            height: 80px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            font-size: 16px;
-        }
+.comment-section textarea {
+    width: 80%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
 
-        .submit-comment {
-            background-color: #ff5733;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
+.submit-comment {
+    background-color: #ff5733 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 15px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    border-radius: 5px !important;
+    margin-top: 10px !important;
+}
 
-        .submit-comment:hover {
-            background-color: #d94d2c;
-        }
+.submit-comment:hover {
+    background-color: #d94d2c !important;
+}
 
-        .likes-count {
-            margin-left: 10px;
-        }
+.likes-count {
+    margin-left: 10px;
+}
+
 
         /* Video Section */
         .video-section {
@@ -196,21 +196,53 @@
             border-radius: 10px;
         }
 
-        /* Social Share Section */
-        .social-share {
-            padding: 40px;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
+        /* Styling the social share section */
+.social-share {
+    padding: 40px;
+    text-align: center;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
 
-        .social-icons a {
-            margin: 0 10px;
-        }
+/* Heading style */
+.social-share h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-        }
+/* Styling the social icon container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styling each social icon */
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the icons */
+.social-icon:hover img {
+    transform: scale(1.1); /* Slightly increases the size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+}
+
+/* Optional: Add focus effect */
+.social-icon:focus img {
+    outline: 2px solid #ff5733; /* Adds focus outline on accessibility */
+}
+
 
         /* Review & Rating Section */
         .review-rating {
@@ -305,6 +337,7 @@
                     <li><a href="About.aspx">About Us</a></li>
                     <li><a href="Menu.aspx">Menu</a></li>
                     <li><a href="SpecialOffers.aspx">Special Offers</a></li>
+                     <li><a href="nutrition.aspx">Nourishment</a></li>
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
@@ -344,10 +377,10 @@
                     <p>Chef Emma has been a core part of Quick Bite since its early days. Her talent in crafting crispy, flavorful sides and her dedication to service has been key to our success.</p>
                 </div>
             </section>
-
-            <!-- Picture Gallery Section -->
-          <section class="picture-gallery">
+<section class="picture-gallery">
     <h2>Our Restaurant in Action</h2>
+    
+    <!-- Gallery Item 1: Dining Area -->
     <div class="gallery-item">
         <img src="img/diningarea.jpg" alt="Dining Area" />
         <div class="gallery-info">
@@ -355,10 +388,12 @@
             <asp:Label ID="likesCount1" runat="server" CssClass="likes-count">0 Likes</asp:Label>
             <div class="comment-section">
                 <textarea id="txtCommentdiningarea" runat="server" placeholder="Leave a comment..."></textarea>
-                <asp:Button ID="btnSubmitComment1" runat="server" Text="Submit Comment" CommandArgument="diningarea" OnClick="SubmitComment_Click" />
+                <asp:Button ID="btnSubmitComment1" runat="server" Text="Submit Comment" CommandArgument="diningarea" CssClass="submit-comment" OnClick="SubmitComment_Click" />
             </div>
         </div>
     </div>
+
+    <!-- Gallery Item 2: Food Plating -->
     <div class="gallery-item">
         <img src="img/plating.jpg" alt="Food Plating" />
         <div class="gallery-info">
@@ -366,11 +401,14 @@
             <asp:Label ID="likesCount2" runat="server" CssClass="likes-count">0 Likes</asp:Label>
             <div class="comment-section">
                 <textarea id="txtCommentplating" runat="server" placeholder="Leave a comment..."></textarea>
-                <asp:Button ID="btnSubmitComment2" runat="server" Text="Submit Comment" CommandArgument="plating" OnClick="SubmitComment_Click" />
+                <asp:Button ID="btnSubmitComment2" runat="server" Text="Submit Comment" CommandArgument="plating" CssClass="submit-comment" OnClick="SubmitComment_Click" />
             </div>
         </div>
     </div>
 </section>
+
+<asp:Label ID="Label1" runat="server" ForeColor="Red" Visible="false" />
+
 
 
 
@@ -379,28 +417,33 @@
    <section class="video-section">
     <h2>Take a Tour of Quick Bite</h2>
     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8E34CjzRhwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video width="600" height="410" controls>
+            <source src="img/my.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </section>
 
 
 
 
+
             <!-- Social Share Section -->
-            <section class="social-share">
-                <h2>Share with Your Friends</h2>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com" target="_blank">
-                        <img src="img/fb.jpg" alt="Share on Facebook">
-                    </a>
-                    <a href="https://twitter.com/share?url=http://example.com" target="_blank">
-                        <img src="img/twitter.jpg" alt="Share on Twitter">
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <img src="img/insta.png" alt="Share on Instagram">
-                    </a>
-                </div>
-            </section>
+          <section class="social-share">
+    <h2>Share with Your Friends</h2>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com" target="_blank" class="social-icon">
+            <img src="img/fb.jpg" alt="Share on Facebook">
+        </a>
+        <a href="https://twitter.com/share?url=http://example.com" target="_blank" class="social-icon">
+            <img src="img/twitter.jpg" alt="Share on Twitter">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+            <img src="img/insta.png" alt="Share on Instagram">
+        </a>
+    </div>
+</section>
+
 
             <!-- Review & Rating Section -->
              <section class="review-rating">

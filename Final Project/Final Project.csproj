@@ -87,12 +87,14 @@
     <Content Include="img\classicburger.jpg" />
     <Content Include="img\crispy.jpg" />
     <Content Include="img\crispyy.jpg" />
+    <Content Include="img\deliverylogo.jpeg" />
     <Content Include="img\diningarea.jpg" />
     <Content Include="img\emma.jpg" />
     <Content Include="img\fahita.jpg" />
     <Content Include="img\fb.jpg" />
     <Content Include="img\food.jpg" />
     <Content Include="img\fries.jpg" />
+    <Content Include="img\hotdog.jpeg" />
     <Content Include="img\iced.jpg" />
     <Content Include="img\image2.jpeg" />
     <Content Include="img\images.jpg" />
@@ -102,7 +104,12 @@
     <Content Include="img\lemonade.jpg" />
     <Content Include="img\logo.jpg" />
     <Content Include="img\logoo.jpeg" />
+    <Content Include="img\my.mp4" />
+    <Content Include="img\olive.jpg" />
     <Content Include="img\onionring.jpg" />
+    <Content Include="img\p.jpeg" />
+    <Content Include="img\piz.jpeg" />
+    <Content Include="img\pizza.jpg" />
     <Content Include="img\plating.jpg" />
     <Content Include="img\s.jpg" />
     <Content Include="img\salad.jpg" />

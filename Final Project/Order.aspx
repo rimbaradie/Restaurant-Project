@@ -206,6 +206,7 @@
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
                      <li><a href="FAQ.aspx">FAQ</a></li>
+                     <li><a href="Delivery.aspx">Delivery</a></li>
                 </ul>
             </nav>
             <asp:Label ID="ErrorMessage" runat="server" ForeColor="Red" Visible="false"></asp:Label>
@@ -230,6 +231,9 @@
                     <option value="classic">Classic Burger</option>
                     <option value="burger">Big Bite Burger</option>
                     <option value="cheese">Cheese burger</option>
+                    <option value="hot">Hot Dog</option>
+                    <option value="wings">Chicken Wings</option>
+                    <option value="p">Pizza</option>
                 </select>
 
                 <!-- Sides Section -->

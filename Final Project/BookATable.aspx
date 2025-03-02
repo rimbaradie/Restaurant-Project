@@ -13,6 +13,7 @@
             background-color: #f4f4f4;
         }
 
+
         /* Navigation Bar */
         nav {
             background-color: #333;
@@ -136,10 +137,12 @@ button[type="submit"]:hover,
                     <li><a href="About.aspx">About Us</a></li>
                     <li><a href="Menu.aspx">Menu</a></li>
                       <li><a href="SpecialOffers.aspx">Special Offers</a></li>
+                      <li><a href="nutrition.aspx">Nourishment</a></li>
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
                     <li><a href="BookATable.aspx">Book A Table</a></li>
                     <li><a href="Location.aspx">Location</a></li>
                      <li><a href="FAQ.aspx">FAQ</a></li>
+                     <li><a href="Delivery.aspx">Delivery</a></li>
                 </ul>
             </nav>
 
